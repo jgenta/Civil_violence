@@ -1,6 +1,6 @@
 % +create lattice                                                                                       //FUNCTION: main
-% 
-% +Matrix: [x][y][0=empty; 1=passive agent; 2=active agent; 3=cop][0=not calculated in actual step; 1=already calculated] %maybe two matrices
+% +(spacial grid): [xsize][ysize][3]-array: [x][y][1] for all agents (0=unoccupied; 1=occupied); [x][y][2] for active agents (1=active; 0=not active/ unoccupied); [x][y][3] for cops (1, or 0)
+% +(array for agents): [1]: active or inactive; [2]: x-position; [3]: y-position; [4] Grievance; [5]risk aversion; [6] Jail (counting down if arrested; 0=free, check at end of time loop if reaching 1: place on grid, calculate if active or inactive)
 % 
 % +
 % 
@@ -8,11 +8,11 @@
 % 
 % +initialize:                                                                                          //NOTE: every implemented function goes in main...main takes also care of initialization
 % 
-% +  hardship H (U(0,1) for each agent)
+% +  (hardship H (U(0,1) for each agent))
 % 
 % +  legitimacy L(global, define between 0 and 1)
 % 
-% +  risk aversion R (U(0,1) for each agent)
+% +  (risk aversion R (U(0,1) for each agent))
 % 
 % +  vision v and v* (moore neighborhood (order), later directionality and stuff)
 % 
@@ -31,6 +31,9 @@
 % +
 % 
 % +for (t=0:timestep: endtime)
+% +  for-loop over people: movement
+%
+% +  for-loop over whole grid: getting active or inactive /arresting
 %
 % +  evaluate magnitude (in terms of agents) of insurgencies                                            //FUNCTION: broadcast_news  
 %
