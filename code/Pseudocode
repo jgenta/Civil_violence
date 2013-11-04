@@ -1,26 +1,69 @@
-%create lattice
-Matrix: [x][y][0=empty; 1=passive agent; 2=active agent; 3=cop][0=not calculated in actual step; 1=already calculated] %maybe two matrizes
-
-		//
-initialize:
-	hardship H (U(0,1) for each agent)
-	legitimacy L(global, define between 0 and 1)
-	risk aversion R (U(0,1) for each agent)
-	vision v and v* (moore neighborhood (order), later directionality and stuff)
-	Treshold (global constant between -1 and 1)
-	
-for (agentnumber=0:1:maxnumber)
-	Calculate:
-		Grieveance G=H(1-L)
-end
-
-for (t=0:timestep: endtime)
-	
-	for (agentnumber=0:1:maxnumber):
-		arrest probability P=1-exp[-k(C/A)_v]
-		net rist: N=RPJ^a, in our case a=0
-		if (G-N>T)
-			go active
-		end
-	end
-	for (cop=0:1:number of cops)
+% +create lattice                                                                                       //FUNCTION: main
+% 
+% +Matrix: [x][y][0=empty; 1=passive agent; 2=active agent; 3=cop][0=not calculated in actual step; 1=already calculated] %maybe two matrices
+% 
+% +
+% 
+% +  
+% 
+% +initialize:                                                                                          //NOTE: every implemented function goes in main...main takes also care of initialization
+% 
+% +  hardship H (U(0,1) for each agent)
+% 
+% +  legitimacy L(global, define between 0 and 1)
+% 
+% +  risk aversion R (U(0,1) for each agent)
+% 
+% +  vision v and v* (moore neighborhood (order), later directionality and stuff)
+% 
+% +  Threshold (global constant between -1 and 1)
+% 
+% +  
+% 
+% +for (agentnumber=0:1:maxnumber)
+% 
+% +  Calculate:
+% 
+% +    Grieveance G=H(1-L)
+% 
+% +end
+% 
+% +
+% 
+% +for (t=0:timestep: endtime)
+%
+% +  evaluate magnitude (in terms of agents) of insurgencies                                            //FUNCTION: broadcast_news  
+%
+% +  
+%
+% +  move agents & cops (directionality for cops...maybe also for agents)                               //FUNCTION: move
+%
+% +     
+% 
+% +  for (agentnumber=0:1:maxnumber):
+%
+% +    update R                                                                                         //FUNCTION: update_agent
+% 
+% +    update arrest probability P=1-exp[-k(C/A)_v]
+% 
+% +    net risk: N=RPJ^a, in our case a=0
+% 
+% +    if (G-N>T)
+% 
+% +      go active
+% 
+% +    end
+% 
+% +  end
+% 
+% +  for (cop=0:1:number of cops)
+%
+% +     update arrest success probability                                                               //FUNCTION: update_cops
+%      
+% +     randomly arrest an active agent in the field of view (permanently removed form the lattice)     //FUNCTION: arrest
+%
+% +  end
+%
+% +  visualize lattice                                                                                  //FUNCTION: show
+%
+% +end 
