@@ -6,9 +6,7 @@
 
 ## General Introduction
 
-As recent revolutions in northern Africa have shown, media has a big impact on the dynamics of insurgencies. It promotes for example the organization of revolutionary groups and events.
-It is therefore of great interest to analyze the influence of the information provided by media on the behavior of single people and the group dynamics.
-This effect of media has an emerging importance on modeling social behavior. Especially in developing countries, where oppressive governments prevented the creation of large revolutionary groups, new social media is having a deep impact in connecting people sharing the same ideals.
+As recent revolutions in northern Africa have shown, media has a big impact on the dynamics of insurgencies. It promotes for example the organization of revolutionary groups and events. It is therefore of great interest to analyze the influence of the information provided by media on the behavior of single people and the group dynamics. For this purpose modeling of social behavior can play an important role. Another interesting aspect to analyze is the influence of oppressive governments that prevent the creation of large revolutionary groups by controlling and limiting the access to the web, which is having a deep impact in connecting people sharing the same ideals.
 
 
 ## The Model
@@ -33,14 +31,13 @@ In order to implement the effects of media, two different ways are proposed:
 
 ## Fundamental Questions
 
-1.       How big is the impact of information availability in revolutionary actions?
-- Do media actually promote insurgencies and in which way? Do media play a role in increasing the frequency at which these insurgencies arise?
-- Are people encouraged to be violent if they can rapidly be supported by other groups through social networks for example?
-- Is therefore information availability an obstacle for oppressive governments that want to have the population under control?
-2.       How can organization within the population affect insurgencies?
-3.       How do localized insurgencies influence the behavior of single people?
-- What happens if they are attracted?
+1. How big is the impact of information availability in revolutionary actions?
+- How do localized insurgencies influence the behavior of single people? 
+- What happens if they are attracted to the place where an insurgency is taking place? 
+- Do media actually promote insurgencies and in which way? 
+- Do media play a role in increasing the frequency at which these insurgencies arise? 
 - How does the revolution evolve?
+--> Is therefore information availability an obstacle for oppressive governments that want to have the population under control?
 
 
 
