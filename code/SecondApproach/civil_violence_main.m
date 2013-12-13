@@ -97,8 +97,10 @@ if SocialMedia
 else
     vp_force=1; %... set to 1 (in every direction) if disabled
 end
-vp=2;
-vc=2;
+
+% Set fields of view (cell distance in every direction) 
+vp=2; %for agents
+vc=2; %for cops 
 
 
 %% Start cycle
