@@ -95,7 +95,7 @@ end
 if SocialMedia
     vp_force=Size; %... total if social media enabled
 else
-    vp_force=1; %... set to 1 (in every direction) if disabled
+    vp_force=2; %... set to 1 (in every direction) if disabled
 end
 
 % Set fields of view (cell distance in every direction) 
