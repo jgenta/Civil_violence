@@ -28,16 +28,6 @@ Grid(:,:,1)=double(a<Pd);
 %Distributing Cops according to Cd
 Grid(:,:,3)=double(a<(Cd+Pd)).*double(a>Pd); 
 
-% temp=1:Size;
-% temp=temp<(Size/4);
-% Grid(:,:,1)=double(temp')*double(temp);
-% Grid(Size,Size,1)=1;
-% Grid(Size,1,1)=1;
-% Grid(1,Size,1)=1;
-% Grid(:,:,2)=zeros(Size,Size);
-% Grid(:,:,3)=zeros(Size,Size);
-% Grid(Size,ceil(Size/2),3)=1;
-
 %Probability Parameter K
 % 1-exp(k)equals the probability of being captured with nC/nA=1
 K=log(0.1); 
