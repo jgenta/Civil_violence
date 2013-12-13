@@ -131,7 +131,7 @@ for t=1:maxT
     [Agents, Cops, Grid]=Arrest(Agents, Cops, Grid,vc, J);
     
     [Agents, Grid]=JailUpdate(Agents, Grid);
-     %visualize(Grid);
+    visualize(Grid);
 end
     
         
