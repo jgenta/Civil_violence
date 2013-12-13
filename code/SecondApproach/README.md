@@ -1,8 +1,8 @@
 #Second Approach
 
-_Media effect implemented as oriented movement.
+_ Media effect implemented as oriented movement.
 
-_Code used to carry out simulation: Civil_Violence_Simulation and DataVisualization
+_ Code used to carry out simulation: Civil_ Violence_Simulation and DataVisualization
 
 
 More details about the results in the report. 
