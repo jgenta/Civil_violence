@@ -91,14 +91,16 @@ for i=1:size(Grid,1)
 end
                                                  
 
-
+%Set Social Force range...
 if SocialMedia
-    vp_force=Size;
+    vp_force=Size; %... total if social media enabled
 else
-    vp_force=1;
+    vp_force=2; %... set to 1 (in every direction) if disabled
 end
-vp=2;
-vc=2;
+
+% Set fields of view (cell distance in every direction) 
+vp=2; %for agents
+vc=2; %for cops 
 
 
 %% Start cycle
